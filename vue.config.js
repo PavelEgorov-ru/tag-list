@@ -5,9 +5,7 @@ module.exports = defineConfig({
   lintOnSave: false,
   css: {
     loaderOptions: {
-      scss: {
-        additionalData: `@import "./src/assets/_vars.scss";`,
-      },
+      scss: {},
     },
   },
 });

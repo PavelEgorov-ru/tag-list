@@ -1,17 +1,22 @@
 <template>
   <v-app>
-    <HelloWorld />
+    <LargeLayout />
+    <MiddleLayout />
+    <SmallLAyout />
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
-
+import LargeLayout from "./layouts/LargeLayout.vue";
+import MiddleLayout from "./layouts/MiddleLayout.vue";
+import SmallLAyout from "./layouts/SmallLAyout.vue";
 export default {
   name: "App",
 
   components: {
-    HelloWorld,
+    LargeLayout,
+    MiddleLayout,
+    SmallLAyout,
   },
 };
 </script>
