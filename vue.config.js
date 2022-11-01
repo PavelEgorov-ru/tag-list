@@ -1,6 +1,13 @@
-const { defineConfig } = require('@vue/cli-service')
+const { defineConfig } = require("@vue/cli-service");
+
 module.exports = defineConfig({
-  transpileDependencies: [
-    'vuetify'
-  ]
-})
+  transpileDependencies: ["vuetify"],
+  lintOnSave: false,
+  css: {
+    loaderOptions: {
+      scss: {
+        additionalData: `@import "./src/assets/_vars.scss";`,
+      },
+    },
+  },
+});
