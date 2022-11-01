@@ -24,5 +24,6 @@ export default {
 .container {
   max-width: 300px;
   background-color: burlywood;
+  height: 100px;
 }
 </style>
